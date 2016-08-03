@@ -134,7 +134,7 @@ $substr = substr($text, 0, 28);
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1] ,"parse_mode" =>"HTML"));	
 }else{
   
-apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
+apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned - شما بن شدید</b>🚫
 Get Out Of Here Idiot🖕
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
@@ -189,7 +189,7 @@ Get Out Of Here Idiot🖕
 		$memcout = count($membersidd)-1;
 	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
-        'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
+        'keyboard' => array(array('🗣 ارسال به همه'),array('⚓️ راهنما','👥 اعضا','❌ لیست سیاه'),array("تنظیمات ⚙")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
